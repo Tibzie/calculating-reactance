@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Calculating Reactance</title>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Calculating Reactance</h1>
+        <div class="wrapper">
+            <div class="form-group">
+                <label for="frequency">Please enter the frequency: </label>
+                <input type="number" id="js-frequency" name="frequency" />
+            </div>
+
+            <div class="form-group">
+                <label for="capatancy">Please enter the capatancy: </label>
+                <input type="number" id="js-capatancy" name="capatancy" />
+            </div>
+            <div class="form-row">
+                <input type="submit" id="js-calculate" class="calculate-btn" value="Calculate" />
+            </div>
+            
+            <div class="reactance-section">
+                <p>The reactance is: </p>
+                <p class="reactance-value" id="js-reactance-value"></p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const PI = 3.14159265359;
+        let frequencyInput = document.getElementById("js-frequency");
+        let capatancyInput = document.getElementById("js-capatancy");
+        let reactanceVal = document.getElementById("js-reactance-value");
+        let calcBtn = document.getElementById("js-calculate");
+
+        calcBtn.addEventListener("click", () => {
+            reactanceVal.innerHTML = parseFloat(1 / (2 * PI * (frequencyInput.value) * (capatancyInput.value))).toFixed(5) + "&#8486";
+        })
+        
+        console.log("Hello");
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#wrapper {
+  background-color: #3b3b45;
+  font-family: 'Ubuntu', sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  color: #e7f4f4;
+}
+
+#wrapper h1 {
+  font-size: 5rem;
+  margin-bottom: 30px;
+}
+
+#wrapper .form-group {
+  font-size: 1.5rem;
+}
+
+#wrapper .form-group:nth-child(2) {
+  margin-top: 20px;
+}
+
+#wrapper .form-group input {
+  font-size: 1.5rem;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+#wrapper .form-row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  margin-top: 40px;
+}
+
+#wrapper .form-row .calculate-btn {
+  font-size: 2rem;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-weight: 700;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  background: transparent;
+  border: 6px dashed #f6546a;
+  color: #f6546a;
+}
+
+#wrapper .form-row .calculate-btn:hover {
+  background: #f6546a;
+  border: 6px dash #e7f4f4;
+  border-radius: 20px;
+  color: #e7f4f4;
+}
+
+#wrapper .reactance-section {
+  margin-top: 40px;
+  font-size: 2rem;
+}
+
+#wrapper .reactance-section .reactance-value {
+  color: #f6546a;
+}
+/*# sourceMappingURL=index.css.map */
